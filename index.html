@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+        <link href="assets/styles/vendor/bootstrap.min.css" rel="stylesheet"/>
+        <link href="assets/styles/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!-- Top Navigation -->
+        <nav class="fhnw-nav">
+            <ul class="fhnw-nav-tabs">
+                <li class="fhnw-nav-tabs-tab col-xs-4 active" data-target="calendar">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </li>
+                <li class="fhnw-nav-tabs-tab col-xs-4" data-target="todos">
+                    <i class="glyphicon glyphicon-list-alt"></i>
+                </li>
+                <li class="fhnw-nav-tabs-tab col-xs-4" data-target="settings">
+                    <i class="glyphicon glyphicon-cog"></i>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <nav class="fhnw-subnav" data-id="nav-calendar">
+                <h1 class="fhnw-subnav-title">
+                    November 2015
+
+                    <button class="pull-right btn btn-default" data-target="createedit-appointment">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </h1>
+            </nav>
+            <nav class="fhnw-subnav hidden" data-id="nav-calendar-day">
+                <h1 class="fhnw-subnav-title">
+                    Fr. 27.11.2015
+
+                    <button class="pull-right btn btn-default" data-target="createedit-appointment">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+
+                    <button class="pull-right btn btn-default" data-target="calendar">
+                        <i class="glyphicon glyphicon-chevron-up"></i>
+                    </button>
+                </h1>
+            </nav>
+            <nav class="fhnw-subnav hidden" data-id="nav-todos">
+                <h1 class="fhnw-subnav-title">
+                    Todos
+
+                    <button class="pull-right btn btn-default" data-target="todos-add">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </h1>
+            </nav>
+            <nav class="fhnw-subnav hidden" data-id="nav-todos-add">
+                <h1 class="fhnw-subnav-title">
+                    Todo hinzuf&uuml;gen
+
+                    <button class="pull-right btn btn-default" data-target="todos">
+                        <i class="glyphicon glyphicon-chevron-up"></i>
+                    </button>
+                </h1>
+            </nav>
+
+            <nav class="fhnw-subnav hidden" data-id="nav-settings">
+                <h1 class="fhnw-subnav-title">
+                    Einstellungen
+                </h1>
+            </nav>
+            <nav class="fhnw-subnav hidden" data-id="nav-createedit-appointment">
+                <h1 class="fhnw-subnav-title">
+                    Termin erstellen
+                </h1>
+            </nav>
+        </section>
+
+        <!-- Main content -->
+        <main>
+            <section class="fhnw-page" data-id="calendar">
+                <table class="fhnw-calendar">
+                    <thead>
+                        <td>
+                            Mo
+                        </td>
+                        <td>
+                            Di
+                        </td>
+                        <td>
+                            Mi
+                        </td>
+                        <td>
+                            Do
+                        </td>
+                        <td>
+                            Fr
+                        </td>
+                        <td>
+                            Sa
+                        </td>
+                        <td>
+                            So
+                        </td>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="fhnw-calendar-other-month">26</td>
+                            <td class="fhnw-calendar-other-month">27</td>
+                            <td class="fhnw-calendar-other-month">28</td>
+                            <td class="fhnw-calendar-other-month">29</td>
+                            <td class="fhnw-calendar-other-month">30</td>
+                            <td class="fhnw-calendar-other-month">31</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <td data-target="calendar-day">2</td>
+                            <td data-target="calendar-day">3</td>
+                            <td data-target="calendar-day">4</td>
+                            <td data-target="calendar-day">5</td>
+                            <td data-target="calendar-day">6</td>
+                            <td data-target="calendar-day">7</td>
+                            <td data-target="calendar-day">8</td>
+                        </tr>
+
+                        <tr>
+                            <td data-target="calendar-day">9</td>
+                            <td data-target="calendar-day">10</td>
+                            <td data-target="calendar-day">11</td>
+                            <td data-target="calendar-day">12</td>
+                            <td data-target="calendar-day">13</td>
+                            <td data-target="calendar-day">14</td>
+                            <td data-target="calendar-day">15</td>
+                        </tr>
+
+                        <tr>
+                            <td data-target="calendar-day">16</td>
+                            <td data-target="calendar-day">17</td>
+                            <td data-target="calendar-day">18</td>
+                            <td data-target="calendar-day">19</td>
+                            <td data-target="calendar-day">20</td>
+                            <td data-target="calendar-day">21</td>
+                            <td data-target="calendar-day">22</td>
+                        </tr>
+
+                        <tr>
+                            <td data-target="calendar-day">23</td>
+                            <td data-target="calendar-day">24</td>
+                            <td data-target="calendar-day">25</td>
+                            <td data-target="calendar-day">26</td>
+                            <td data-target="calendar-day">27</td>
+                            <td data-target="calendar-day">28</td>
+                            <td data-target="calendar-day">29</td>
+                        </tr>
+
+                        <tr>
+                            <td data-target="calendar-day">30</td>
+                            <td class="fhnw-calendar-other-month">1</td>
+                            <td class="fhnw-calendar-other-month">2</td>
+                            <td class="fhnw-calendar-other-month">3</td>
+                            <td class="fhnw-calendar-other-month">4</td>
+                            <td class="fhnw-calendar-other-month">5</td>
+                            <td class="fhnw-calendar-other-month">6</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </section>
+
+            <section class="fhnw-page hidden" data-id="calendar-day">
+                <table class="fhnw-calendar-day">
+                </table>
+            </section>
+
+            <section class="fhnw-page hidden" data-id="createedit-appointment">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <input type="text" placeholder="Titel" class="fhnw-input" data-input="title">
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="text" placeholder="Ort" class="fhnw-input" data-input="place">
+                        </div>
+                        <div class="col-xs-12">
+                            <select class="fhnw-input fhnw-select fhnw-select-fluid" data-input="hour">
+                                <option value="HH">HH</option>
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                            </select>
+                            :
+                            <select disabled="disabled" class="fhnw-input fhnw-select fhnw-select-fluid">
+                                <option>MM</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12">
+                            <select class="fhnw-input fhnw-select" data-input="color">
+                                <option value="red">Rot</option>
+                                <option value="green">Grün</option>
+                                <option value="blue">Blau</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12">
+                            <button type="button" class="btn fhnw-button-secondary" disabled="disabled">
+                                <i class="glyphicon glyphicon-list-alt"></i> ToDos für diesen Termin
+                            </button>
+                        </div>
+                        <div class="col-xs-12">
+                            <button type="button" class="btn btn-primary fhnw-button" data-submit="fhnw-appointment">
+                                <i class="glyphicon glyphicon-ok"></i> Eintragen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fhnw-page hidden" data-id="todos">
+                <ul class="fhnw-todos-list"></ul>
+            </section>
+
+            <section class="fhnw-page hidden" data-id="todos-add">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <input type="text" placeholder="Todo" class="fhnw-input" id="fhnw-todo-textinput">
+                        </div>
+                        <div class="col-xs-12">
+                            <button type="button" class="btn btn-primary fhnw-button" data-submit="fhnw-todo-textinput">
+                                Eintragen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fhnw-page hidden" data-id="settings">
+                <ul class="fhnw-list">
+                    <li class="fhnw-list-point">
+                        <a href="javascript:noop()" disabled="disabled">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                            Abmelden
+                        </a>
+                    </li>
+                    <li class="fhnw-list-point">
+                        <a href="javascript:noop()" disabled="disabled">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                            Mein Profil
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+        </main>
+
+        <script type="text/javascript" src="assets/js/vendor/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/todos.js"></script>
+        <script type="text/javascript" src="assets/js/appointments.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>
