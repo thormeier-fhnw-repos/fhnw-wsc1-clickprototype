@@ -49,7 +49,7 @@ $(document).ready( function () {
         $('.fhnw-calendar-day').html(mainMarkup);
 
         var appointments = appointmentStorage.loadAll();
-        console.log(appointments);
+
         for (i = 0; i < appointments.length; i++) {
             $(this).append(appointments[i].render());
         }
@@ -64,6 +64,15 @@ $(document).ready( function () {
                 todoStorage.save(new Todo(input.val(), false));
                 input.val('');
                 $('[data-target="todos"]').trigger('click');
+                return;
+            case 'fhnw-appointment':
+                var inputText = $('.fhnw-input[data-input="title"]'),
+                    inputPlace = $('.fhnw-input[data-input="place"]'),
+                    inputHour = $('.fhnw-input[data-input="hour"]'),
+                    inputColor = $('.fhnw-input[data-input="color"]');
+
+                appointmentStorage.save(new Appointment(inputText.val(), inputHour.val(), inputColor.val(), inputPlace.val()));
+                $('[data-target="calendar-day"]').trigger('click');
                 return;
         }
     }).on('click', '.fhnw-day-appointment', function () {

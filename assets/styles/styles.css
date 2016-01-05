@@ -125,6 +125,10 @@ input[type=text] {
     position: absolute;
     top: 130px;
 }
+.calendar-day-current {
+    background-color: #cde89d;
+    font-weight: bold;
+}
 
 .fhnw-calendar-day tr td:first-child {
     width: 50px;
@@ -132,7 +136,13 @@ input[type=text] {
     padding-right: 10px;
     text-align: right;
 }
-
+.fhnw-month-appointment {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin: 3px;
+}
 .fhnw-day-appointment {
     position: absolute;
     margin-left: 60px;

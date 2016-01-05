@@ -121,7 +121,7 @@
                             <td data-target="calendar-day">3</td>
                             <td data-target="calendar-day">4</td>
                             <td data-target="calendar-day">5</td>
-                            <td data-target="calendar-day">6</td>
+                            <td data-target="calendar-day">6<span class="fhnw-month-appointment fhnw-day-appointment-red"></span></td>
                             <td data-target="calendar-day">7</td>
                             <td data-target="calendar-day">8</td>
                         </tr>
@@ -130,9 +130,9 @@
                             <td data-target="calendar-day">9</td>
                             <td data-target="calendar-day">10</td>
                             <td data-target="calendar-day">11</td>
-                            <td data-target="calendar-day">12</td>
+                            <td data-target="calendar-day" class="calendar-day-current">12 <span class="fhnw-month-appointment fhnw-day-appointment-red"></span></td>
                             <td data-target="calendar-day">13</td>
-                            <td data-target="calendar-day">14</td>
+                            <td data-target="calendar-day">14<span class="fhnw-month-appointment fhnw-day-appointment-blue"></span><span class="fhnw-month-appointment fhnw-day-appointment-green"></span></td>
                             <td data-target="calendar-day">15</td>
                         </tr>
 
@@ -186,6 +186,65 @@
                             <input type="text" placeholder="Ort" class="fhnw-input" data-input="place">
                         </div>
                         <div class="col-xs-12">
+                            <select class="fhnw-input fhnw-select fhnw-select-fluid" data-input="day">
+                                <option>TT</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option selected="selected">17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <select class="fhnw-input fhnw-select fhnw-select-fluid" data-input="month">
+                                <option>MM</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option selected="selected">11</option>
+                                <option>12</option>
+                            </select>
+                            <select class="fhnw-input fhnw-select fhnw-select-fluid" data-input="year">
+                                <option>YYYY</option>
+                                <option selected="selected">2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                            </select>
+                        </div>
+
+                        <div class="col-xs-12">
                             <select class="fhnw-input fhnw-select fhnw-select-fluid" data-input="hour">
                                 <option value="HH">HH</option>
                                 <option value="00">00</option>
@@ -227,12 +286,12 @@
                         </div>
                         <div class="col-xs-12">
                             <button type="button" class="btn fhnw-button-secondary" disabled="disabled">
-                                <i class="glyphicon glyphicon-list-alt"></i> ToDos für diesen Termin
+                                <i class="glyphicon glyphicon-list-alt"></i> ToDo-Liste für diesen Termin
                             </button>
                         </div>
                         <div class="col-xs-12">
                             <button type="button" class="btn btn-primary fhnw-button" data-submit="fhnw-appointment">
-                                <i class="glyphicon glyphicon-ok"></i> Eintragen
+                                <i class="glyphicon glyphicon-ok"></i> Termin speichern
                             </button>
                         </div>
                     </div>

@@ -29,7 +29,6 @@ function TodoStorage (storage) {
 }
 TodoStorage.prototype.save = function (todo) {
     var all = this.loadAll();
-    console.log(all);
 
     for (var i = 0; i < all.length; i++) {
         if (all[i].text === todo.text) {
